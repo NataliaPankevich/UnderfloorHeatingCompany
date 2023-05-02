@@ -1,0 +1,78 @@
+.advantages__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.advantages__title {
+    width: var(--width-block);
+    max-width: 480px;
+}
+
+.advantages__list {
+    width: var(--width-block);
+}
+
+.advantages__item {
+    background-image: url('../img/Star.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 32px;
+    font-size: 24px;
+    line-height: 1.3; 
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.advantages__item:last-child { 
+    margin-bottom: 0px;
+}
+
+@media (max-width:1240px) {
+    .advantages__title {
+        max-width: 330px;
+    }
+    .advantages__item {
+        font-size: 20px; 
+    }
+    .advantages__container {
+        padding: 0 30px;            
+    }
+}
+@media (max-width:920px) {  
+    .advantages__item {               
+        font-size: 16px;
+        margin-bottom: 16px;  
+        padding: 0 calc(var(--padding) + 30px);
+    }
+    .advantages__container {
+        padding: 0 calc(var(--padding) + 30px);
+        gap: 0px; 
+        display: flex;
+        flex-direction: column;      
+    }
+    .advantages__title {
+        width:100%; 
+        margin-bottom: 24px;
+        max-width: 440px;
+    }
+    .advantages__list {
+        width:100%; 
+    }
+
+}
+@media (max-width:560px) {
+    .advantages__container {
+        padding: 0 20px;
+        padding: 0 calc(var(--padding) + 20px);            
+    }
+    .advantages__item {
+        font-size: 14px;        
+        padding-left: 24px;      
+    }
+    .advantages__title {
+        margin-bottom: 16px;
+    }
+}
